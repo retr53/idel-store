@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "goods";
+    src: url("/static/fonts/goods.ttf" ) format("truetype");
+}
+body {
+    background-color: black;
+    color: gold;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 16px;
+    
+    margin: 15px;
+   
+
+    
+    
+}
+
+
+nav ul li {
+    margin: 14px;
+    font-size: 16pt;
+    font-family: "goods";
+    box-sizing: border-box;
+   
+    height: 40px; /* Примерная высота, вы можете изменить её в зависимости от вашего дизайна */
+    
+    align-items: center;
+    width: 160px;
+}
+
+nav ul li a {
+    text-decoration: none ;
+    color: rgb(219, 160, 9);
+    box-sizing: border-box;
+    
+    
+    margin-left: 16px;
+    margin-right: 16px;
+    
+
+}
+
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    font-size: 18pt;
+}
+
+nav img {
+    height: 250px;
+}
+

@@ -1,0 +1,61 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <!-- Мета-теги для определения кодировки и масштаба вьюпорта -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок страницы, отображаемый во вкладке браузера -->
+    <title>Idel.moto</title>
+    <!-- Подключение внешних стилей -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Шапка сайта, обычно содержит лого и навигацию -->
+    <header>
+        
+        
+        <nav>
+            <img src="{% static 'img/logo.png' %}" alt="">
+            <!-- Навигационное меню -->
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Каталог</a></li>
+                <li><a href="#services">Салоны</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main>
+        <!-- Раздел домашней страницы -->
+        <section id="home">
+            <h2>Добро пожаловать!</h2>
+            <p>Текст описания вашей компании или продукта.</p>
+        </section>
+        <!-- Раздел о компании -->
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Подробная информация о компании.</p>
+        </section>
+        <!-- Раздел услуг -->
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <p>Информация о предоставляемых услугах.</p>
+        </section>
+        <!-- Раздел контактов -->
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Способы связи с компанией.</p>
+        </section>
+    </main>
+    <!-- Подвал сайта, обычно содержит копирайт, ссылки на соц. сети и т.д. -->
+    <footer>
+        <p>&copy; 2024 Ваша Компания</p>
+    </footer>
+    <!-- Подключение скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
