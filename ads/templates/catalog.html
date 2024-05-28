@@ -1,6 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
+{% for product in moto %} 
+<img src = "{{ product.image.url }}">
+<p>
+    {{ product.name }}
+    
+</p>
+<p>
+    {{ product.price }}
 
+</p>
+<p>
+    {{ product.description }}
+
+</p>
+<br>
+{% endfor %}
 poto;ok
 
+
 {% endblock %}
+

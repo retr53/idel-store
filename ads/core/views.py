@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Moto
 
 # Create your views here.
 def home(request):
@@ -6,5 +7,6 @@ def home(request):
 def page(request):
     return render(request, "ggg.html")
 def catalog(request):
-    return render(request, "catalog.html")
+    motopoduct = Moto.objects.all()
+    return render(request, "catalog.html",{'moto':motopoduct})
     
