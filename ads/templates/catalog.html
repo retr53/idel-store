@@ -1,20 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} <!--наследуемся от base.html -->
 {% block content %}
 {% for product in moto %} 
-<img src = "{{ product.image.url }}">
-<p>
-    {{ product.name }}
-    
-</p>
-<p>
-    {{ product.price }}
+    <img src = "{{ product.image.url }}"> <!--картинка -->
+    <p>
+        {{ product.name }}
 
-</p>
-<p>
-    {{ product.description }}
+    </p>
+    <p>
+        {{ product.price }}
 
-</p>
-<br>
+    </p>
+    <p>
+        {{ product.description }}
+
+    </p>
+    <br>
 {% endfor %}
 poto;ok
 

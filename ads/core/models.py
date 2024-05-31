@@ -5,7 +5,7 @@ class Moto(models.Model):
     name = models.CharField(max_length=100)
     price = models.IntegerField(default=0)
     description = models.TextField()
-    image = models.ImageField(upload_to="",null=True, blank=True)
+    image = models.ImageField(upload_to="core/image/",null=True, blank=True)
     
     
 

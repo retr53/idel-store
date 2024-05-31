@@ -25,4 +25,6 @@ urlpatterns = [
     path('ggg/', page, name = "ggg"),
     path('catalog/',catalog,name = "catalog"    )
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
